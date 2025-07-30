@@ -226,6 +226,30 @@ st.markdown("""
         transition: all 0.3s ease;
     }
     
+    /* Sidebar navigation text styling - make text white and visible */
+    .css-1lcbmhc .stRadio label {
+        color: #ffffff !important;
+        font-weight: bold !important;
+        font-size: 16px !important;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.7) !important;
+    }
+    
+    .css-1lcbmhc .stRadio label:hover {
+        color: #ffffff !important;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.9) !important;
+    }
+    
+    /* Ensure all sidebar text elements are white */
+    .css-1lcbmhc .stRadio div[data-baseweb="radio"] label {
+        color: #ffffff !important;
+        font-weight: bold !important;
+    }
+    
+    /* Additional sidebar text styling */
+    .css-1lcbmhc .stRadio * {
+        color: #ffffff !important;
+    }
+    
     /* Better text contrast */
     h1, h2, h4, h5, h6 {
         color: #2c3e50;
