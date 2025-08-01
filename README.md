@@ -1,3 +1,5 @@
+![Screenshot](./assets/Dashboard.png)
+
 # 🐋 BluWale
 
 A gamified water tracking app helping UK households reduce water consumption through interactive dashboards, points systems, and personalized tips.
