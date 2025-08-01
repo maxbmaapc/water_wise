@@ -210,6 +210,12 @@ st.markdown("""
         box-shadow: inset -2px 0 5px rgba(33, 150, 243, 0.1);
     }
     
+    /* Ensure sidebar has dark background for white text visibility */
+    .css-1d391kg, .css-1lcbmhc {
+        background: linear-gradient(180deg, #1e3a8a, #1e40af, #3b82f6) !important;
+        box-shadow: inset -2px 0 5px rgba(33, 150, 243, 0.3);
+    }
+    
     /* Sidebar radio buttons styling */
     .css-1lcbmhc .stRadio > div {
         background: linear-gradient(135deg, #ffffff, #f8f9fa);
@@ -247,6 +253,74 @@ st.markdown("""
     
     /* Additional sidebar text styling */
     .css-1lcbmhc .stRadio * {
+        color: #ffffff !important;
+    }
+    
+    /* Force white color for all sidebar radio button text */
+    .stRadio label, .stRadio span, .stRadio div {
+        color: #ffffff !important;
+        font-weight: bold !important;
+    }
+    
+    /* Target the specific radio button container */
+    .stRadio > div > div > label {
+        color: #ffffff !important;
+        font-weight: bold !important;
+        font-size: 16px !important;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.7) !important;
+    }
+    
+    /* Ensure the radio button text is always white */
+    .stRadio [data-testid="stRadio"] label {
+        color: #ffffff !important;
+        font-weight: bold !important;
+    }
+    
+    /* Target the actual text content of radio button labels */
+    .stRadio label span, .stRadio label div {
+        color: #ffffff !important;
+        font-weight: bold !important;
+    }
+    
+    /* Force all text within radio buttons to be white */
+    .stRadio * {
+        color: #ffffff !important;
+    }
+    
+    /* Specific targeting for the navigation text */
+    .stRadio > div > div > div > label {
+        color: #ffffff !important;
+        font-weight: bold !important;
+        font-size: 16px !important;
+    }
+    
+    /* Target any text elements within the radio button */
+    .stRadio label, .stRadio label *, .stRadio div, .stRadio div * {
+        color: #ffffff !important;
+        font-weight: bold !important;
+    }
+    
+    /* Comprehensive targeting for all possible text elements */
+    .stRadio, .stRadio *, .stRadio label, .stRadio label *, .stRadio div, .stRadio div * {
+        color: #ffffff !important;
+        font-weight: bold !important;
+    }
+    
+    /* Force white color for the actual navigation text */
+    .stRadio [role="radio"] label {
+        color: #ffffff !important;
+        font-weight: bold !important;
+        font-size: 16px !important;
+    }
+    
+    /* Target the text content specifically */
+    .stRadio [data-baseweb="radio"] label {
+        color: #ffffff !important;
+        font-weight: bold !important;
+    }
+    
+    /* Override any other color settings */
+    .stRadio * {
         color: #ffffff !important;
     }
     
